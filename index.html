@@ -168,6 +168,30 @@ label.light {
        </form>
         </div>
       </div>
-      
+      <!-- Diğer kısım kodlarınızı atlıyorum çünkü değişiklik yapmadım. -->
+
+<body>
+  <div class="row">
+    <div class="col-md-12">
+      <form id="signupForm" action="index.html" method="post">
+        <h1> Sign Up </h1>
+        
+        <!-- ... Diğer form elemanları ... -->
+        
+        <button type="submit">yüzdelik hesapla</button>
+      </form>
+      <p id="mesaj"></p> <!-- Bu kısım yeni eklenen mesajı göstermek için. -->
+    </div>
+  </div>
+  
+  <script>
+    // Formun gönderilmesini engelliyoruz ve butona basıldığında mesajı gösteriyoruz.
+    document.getElementById('signupForm').addEventListener('submit', function(e) {
+        e.preventDefault();  // Formun gerçekten gönderilmesini engelliyoruz.
+        document.getElementById('mesaj').textContent = 'Tam bana göresin, benimle çıkar mısın?';
+    });
+  </script>
+</body>
+
     </body>
 </html>
